@@ -1,7 +1,7 @@
 # metagenomic-nut-lim
 
-### to do:   
-Example Script
+### to do:
+Example Script | dummy dataset zipped on gdrive
 1. make function | input robust | clear function header | final text desctiption  
 2. **merge_anvio_summary** ~~make function~~ | input robust | clear function header | final text desctiption  
 3. make function | input robust | clear function header | final text desctiption  
