@@ -1,7 +1,11 @@
 # metagenomic-nut-lim
 
-### to do: 
-Decide how in detail to make it all *  
+### to do:   
+Example Script
+1. make function | input robust | clear function header | final text desctiption  
+2. **merge_anvio_summary** ~~make function~~ | input robust | clear function header | final text desctiption  
+3. make function | input robust | clear function header | final text desctiption  
+4. make function | input robust | clear function header | final text desctiption  
 
 # Analysis
 ### Anvi'o
