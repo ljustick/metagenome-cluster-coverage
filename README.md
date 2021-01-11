@@ -5,8 +5,7 @@ Example Script | dummy dataset zipped on gdrive
 1. make function | input robust | clear function header | final text desctiption  
 2. **merge_anvio_summary** ~~make function~~ | input robust | clear function header | final text desctiption  
 3. make function | input robust | clear function header | final text desctiption  
-4. make function | input robust | clear function header | final text desctiption  
-
+  
 # Analysis
 ### Anvi'o
 Anvi'o Metagenomic Tutorial: http://merenlab.org/2016/06/22/anvio-tutorial-v2/  
