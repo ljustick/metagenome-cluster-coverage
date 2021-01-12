@@ -19,13 +19,6 @@ nutrient_gene_table = readtable(species_nutrient_file);
 
 %% Calculate Coverage of genes
 
-% bins = ls([ Dataset]) ; %ALL bins
-% bins = split(convertCharsToStrings(bins)) ; %ALL bins
-% save = readtable([  Dataset '/' char(bins(1,1)) ]);
-% [clus,~] = size(unique(nutrient_gene_table(:,1))); % Number of clusters
-% save = save(1:clus,:);
-% [~,c] = size(save); c=c-1; % Number of samples
-
 bins = ls(Dataset) ; %ALL bins
 bins = split(convertCharsToStrings(bins)) ; %ALL bins
 save = readtable([  Dataset '/' char(bins(1,1)) ]);

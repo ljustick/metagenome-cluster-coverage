@@ -27,7 +27,6 @@ genomes = split(convertCharsToStrings(genomes)) ;
 
 
 for i = 1:rr-1 %Loop through each bin/genome
-    %i=1;
     bin = strjoin([folder "/" samples(1,1) "/bin_by_bin/" genomes(i,1) "/" genomes(i,1) file_type],"");
     save = readtable(bin,'ReadVariableNames',false);
     jj=2;
@@ -39,7 +38,6 @@ for i = 1:rr-1 %Loop through each bin/genome
         save(:,jj:jj+ccc-2) = add ;       
         jj=jj+ccc-1;
     end
-    %save.Properties.VariableNames = cellstr(horzcat('gene_callers_id',strrep(samples(1:r-1).',"-SUMMARY","")));
     save.Properties.VariableNames = table2cell(save(1,:));
     save=save(2:rrr,:);
     writetable(save,strjoin([database "/" database "-" genomes(i,1) file_type],''));
