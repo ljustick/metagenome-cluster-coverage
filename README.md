@@ -11,7 +11,8 @@ Example:
 | ---- | ---- | ---- |
 | 001 | genome1 | GCID |
 | 001 | genome2 | GCID |
-| ... | ... | ... |  
+| ... | ... | ... |
+  
 This information can be generated using the above Anvi'o pipelines. The pangenomic summary file contains all the required information to create this table.
 ### 2. Merge summaries together
 Matlab function to merge Anvi'o summary files together, all inputs must be strings.
