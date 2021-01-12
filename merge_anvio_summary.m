@@ -9,7 +9,7 @@ file_type = in1; %example "-gene_coverages.txt"
 folder = in2; %example "C13-Summaries"
 database = in3; %example "C13"
 
-mkdir(strjoin([database "-MERGED-SUMMARY"],''));
+mkdir(database);
 
 % Isolate all samples in the given folder
 samples = ls(folder) ;
@@ -42,9 +42,7 @@ for i = 1:rr-1 %Loop through each bin/genome
     %save.Properties.VariableNames = cellstr(horzcat('gene_callers_id',strrep(samples(1:r-1).',"-SUMMARY","")));
     save.Properties.VariableNames = table2cell(save(1,:));
     save=save(2:rrr,:);
-    writetable(save,strjoin([database "-MERGED-SUMMARY/" database "-" genomes(i,1) file_type],''));
+    writetable(save,strjoin([database "/" database "-" genomes(i,1) file_type],''));
 end
 
-
 end
-
