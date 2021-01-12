@@ -1,6 +1,6 @@
-# metagenomic-nut-lim
-Test dataset:  
-In the test dataset part 1 is provided in the file `pro_Fe_nut_clus.csv`
+# metagenomic-cluster-coverage
+Test dataset: https://drive.google.com/file/d/1DptBNHpCBE4ftzW6Jq0AElJZzkWCwtDP/view?usp=sharing  
+Data for part 1 is provided in the file `pro_Fe_nut_clus.csv`
 ### Anvi'o
 Anvi'o Metagenomic Tutorial: http://merenlab.org/2016/06/22/anvio-tutorial-v2/  
 Anvi'o Pangenomic Tutorial: http://merenlab.org/2016/11/08/pangenomics-v2/
@@ -11,7 +11,7 @@ Example:
 | ---- | ---- | ---- |
 | 001 | genome1 | GCID |
 | 001 | genome2 | GCID |
-| ... | ... | ... |
+| ... | ... | ... |  
 This information can be generated using the above Anvi'o pipelines. The pangenomic summary file contains all the required information to create this table.
 ### 2. Merge summaries together
 Matlab function to merge Anvi'o summary files together, all inputs must be strings.
