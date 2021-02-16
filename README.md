@@ -24,7 +24,7 @@ example:
 merge_anvio_summary("-gene_coverages.txt","SUMMARIES","TEST")
 ```
 This will results in the following. All gene coverage files will be merged into a single file per reference genome found in the directory TEST.
-### 3. Extract raw read abundances
+### 3. Sum coverages of genes in clusters of interest
 Matlab function to extract gene cluster read coverages, all inputs must be character arrays.
 ```matlab
 cluster_coverage(cluster_file,dataset,output_file)
