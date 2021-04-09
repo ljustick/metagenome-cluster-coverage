@@ -8,7 +8,7 @@ function cluster_coverage(in1,in2,in3)
 
 %Pick what species and nutrient you want to work on
 %species_nutrient_file='pro_Fe_nut_clus.csv';
-%Dataset='BV';
+%Dataset='TEST';
 %out_file='test.csv';
 
 species_nutrient_file=in1;
@@ -34,7 +34,7 @@ ii=1;
 while ii <= clus  %Loop through each gene cluster
     gclus_id = string(table2array(nutrient_gene_table (i,1)));
     disp(gclus_id)
-    rr=1; %table2array(nutrient_gene_table(i,5));%Number of genes in gene cluster
+    rr=1; %Number of genes in gene cluster
     if i+rr < r %Prevent from breaking on last entry
         while table2array(nutrient_gene_table(i,1)) == table2array(nutrient_gene_table(i+rr,1))
             rr=rr+1;
@@ -43,21 +43,17 @@ while ii <= clus  %Loop through each gene cluster
             end
         end
     end
-    %disp(rr)
-    %rr=rr-1;
+
     cluster_cov=zeros(rr,c);
     save(ii,1) = nutrient_gene_table(i,1);
-    %disp(i)
     
     for j = 1:rr %Loop through every ID in the cluster
         genome_name = char(table2array(nutrient_gene_table(i,2))); 
-        %genome_name = strrep(genome_name,'_','-'); %Change characters such as underlines giving issues
         coverage_path =[  Dataset '/' Dataset '-' genome_name '-gene_coverages.txt' ];
         coverage_file = readtable(coverage_path,'ReadRowNames',true);
         gc_id = string(table2array(nutrient_gene_table (i,3)));
         cluster_cov(j,:) = table2array(coverage_file(gc_id,:));
         i=i+1;
-        %disp(i)
     end
     [num_in_clus,~]=size(cluster_cov);
     if num_in_clus == 1
@@ -66,7 +62,6 @@ while ii <= clus  %Loop through each gene cluster
         save(ii,2:c+1)=array2table(sum(cluster_cov));
     end
     ii=ii+1;
-    %i=i+1;
     
 end
 save1 = save (1:clus,:);
