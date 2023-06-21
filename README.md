@@ -1,4 +1,6 @@
 # metagenomic-cluster-coverage
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8065219.svg)](https://doi.org/10.5281/zenodo.8065219)
+
 Test dataset: https://drive.google.com/drive/folders/1ysmM95UsyMB_pQ84owqQrmuTLhFBpTnF?usp=sharing  
 Data for part 1 is provided in the file `pro_Fe_nut_clus.csv`
 Code was made for matlab ver. R2018b
